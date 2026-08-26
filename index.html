@@ -1,0 +1,147 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My Loft — Pigeon Stock</title>
+<style>
+.hero{position:relative;min-height:205px;overflow:hidden;background:linear-gradient(180deg,#bfeef2 0%,#e9faf5 62%,#dff2df 100%);border-bottom:0}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:34px;background:linear-gradient(180deg,transparent,#b9d99e);opacity:.65}
+.heroText{position:relative;z-index:3}.leaf{position:absolute;left:-8px;top:-12px;font-size:88px;transform:rotate(-20deg);opacity:.55}.hero .loftName{font-size:38px;letter-spacing:1px}.hero h1{font-size:50px;letter-spacing:1px}.hero .tag{font-size:22px}
+.flight{position:absolute;right:0;top:0;width:58%;height:100%;z-index:2}
+.fly{font-size:34px!important}
+.f4{top:62px;left:-70px;font-size:25px!important;animation-delay:5.6s}
+@keyframes flyAcross{0%{transform:translate(-70px,80px) rotate(-8deg);opacity:0}8%{opacity:1}25%{transform:translate(8vw,15px) rotate(4deg)}50%{transform:translate(25vw,70px) rotate(-3deg)}75%{transform:translate(42vw,5px) rotate(6deg)}92%{opacity:1}100%{transform:translate(65vw,45px) rotate(10deg);opacity:0}}
+
+.farmScene{height:135px;background:linear-gradient(#d9f5fb,#eefbe8);border-bottom:1px solid #d6e7dd}
+.groundAnimals{bottom:7px}.dog{font-size:43px}.hen{font-size:34px}
+.card{border-radius:22px;box-shadow:0 8px 25px rgba(30,85,73,.09)}
+.nav{margin-top:16px}.nav button{font-size:15px;padding:13px 18px}
+#shop .card h2{font-size:31px;margin-top:0}
+#shopRows td{font-size:16px}.pill{font-size:16px;padding:7px 13px}
+.callBar{display:flex;gap:12px;align-items:center;margin-top:16px;flex-wrap:wrap}
+.callBar a{background:#075c51;color:white;text-decoration:none;border-radius:12px;padding:13px 20px;font-weight:900;font-size:16px}
+.health{background:#e8f7e8;border-radius:14px;padding:13px 17px;color:#25623a;font-weight:800}
+.quoteSpace{min-height:165px;background:linear-gradient(135deg,#fffaf0,#edf7ee);border:1px solid #e2e5d4}
+.quote{font-size:27px}
+@media(max-width:700px){.hero{min-height:185px}.hero .loftName{font-size:31px}.hero h1{font-size:39px}.hero .tag{font-size:19px}.flight{width:48%}.fly{font-size:25px!important}.farmScene{height:125px}}
+@media(max-width:480px){.hero{min-height:175px}.hero .loftName{font-size:27px}.hero h1{font-size:33px}.hero .tag{font-size:17px}.leaf{font-size:65px}.flight{width:45%}.quote{font-size:21px}}
+
+body{margin:0;background:#f4faf8;color:#123b3a;font-family:Arial,sans-serif}.hero{padding:24px 5%;background:linear-gradient(120deg,#dff4ed,#fff,#dcefea);display:flex;justify-content:space-between;align-items:center}.hero h1{margin:5px 0;font-size:40px}.tag{font:italic 19px Georgia;color:#276158}.birds{font-size:65px}.loftName{font-size:30px;font-weight:900;letter-spacing:.8px;color:#123f3e}.flight{position:relative;width:250px;height:125px;overflow:hidden}.fly{position:absolute;font-size:31px;animation:flyAcross 7s linear infinite;opacity:0}.f1{top:15px;left:-50px}.f2{top:55px;left:-80px;font-size:25px;animation-delay:2.2s}.f3{top:90px;left:-60px;font-size:21px;animation-delay:4.3s}@keyframes flyAcross{0%{transform:translateX(0) translateY(15px) rotate(-5deg);opacity:0}10%{opacity:1}50%{transform:translateX(145px) translateY(-12px) rotate(4deg)}90%{opacity:1}100%{transform:translateX(310px) translateY(-30px) rotate(8deg);opacity:0}}.quoteSpace{position:relative;min-height:145px;margin-top:18px;border-radius:18px;background:linear-gradient(135deg,#edf9f5,#fff);overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center;padding:22px}.quoteSpace:after{content:"🕊️";position:absolute;right:20px;bottom:12px;font-size:42px;opacity:.18;animation:floatBird 3s ease-in-out infinite}@keyframes floatBird{50%{transform:translateY(-10px) rotate(4deg)}}.quote{position:relative;font:italic 23px Georgia,serif;color:#276158;max-width:700px;line-height:1.45}.quote small{display:block;margin-top:8px;font:normal 12px Arial,sans-serif;letter-spacing:1.5px;color:#6c8580}.wrap{max-width:1100px;margin:auto;padding:20px}.nav{display:flex;gap:8px;margin-bottom:15px}.nav button{padding:11px 15px;border:0;border-radius:9px;font-weight:bold;background:#e1efeb;color:#174e4c}.nav .active{background:#0b5758;color:white}.card{background:white;border:1px solid #dce9e5;border-radius:18px;padding:20px;margin-bottom:18px;box-shadow:0 4px 15px #174e4c0b}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.stat{padding:18px;border-radius:15px}.a{background:#e5f8f0}.b{background:#eaf0ff}.c{background:#fff5db}.stat small{font-weight:bold}.stat strong{display:block;font-size:28px;margin-top:7px}.form{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.form label{font-size:11px;font-weight:bold}.form input{width:100%;padding:11px;margin-top:5px;border:1px solid #ccdcd8;border-radius:8px}.form button{grid-column:1/-1;padding:12px;border:0;border-radius:8px;background:#0b5758;color:white;font-weight:bold}table{width:100%;border-collapse:collapse;min-width:720px}th{background:#083f42;color:white;padding:12px;text-align:left;font-size:12px}td{padding:11px;border-bottom:1px solid #e7efed}.pill{background:#e3f6ee;padding:5px 10px;border-radius:9px;font-weight:bold}.money{font-weight:900;color:#138b4c}.hidden{display:none}.note{font-size:13px;color:#657875}.download{background:#0b5758;color:white;border:0;border-radius:8px;padding:10px;font-weight:bold}.farmScene{height:150px;position:relative;overflow:hidden;margin:0;background:linear-gradient(#e9faf6,#f8fcf8);border-bottom:1px solid #dce9e5}
+.sun{position:absolute;right:7%;top:12px;font-size:32px;animation:sunPulse 3s ease-in-out infinite}.cloud{position:absolute;font-size:34px;opacity:.55}.cloud1{left:8%;top:18px;animation:cloudMove 18s linear infinite}.cloud2{left:52%;top:42px;font-size:27px;animation:cloudMove2 24s linear infinite}
+.pigeonFlight{position:absolute;left:-100px;top:18px;display:flex;gap:24px;font-size:28px;animation:flockFly 11s linear infinite}.pigeonFlight span:nth-child(2){margin-top:25px;font-size:23px}.pigeonFlight span:nth-child(3){margin-top:-8px;font-size:20px}
+.groundAnimals{position:absolute;left:0;right:0;bottom:10px;height:62px}.hen{position:absolute;font-size:32px;bottom:8px;animation:henWalk 6s ease-in-out infinite}.hen1{left:22%;animation-delay:.3s}.hen2{left:40%;font-size:28px;animation-delay:2s}.feed{position:absolute;left:34%;bottom:4px;color:#9b7b3a;letter-spacing:5px;font-weight:bold;animation:feedBounce 1.8s ease-in-out infinite}
+.dog{position:absolute;left:-70px;bottom:4px;font-size:38px;animation:dogRun 9s linear infinite}
+@keyframes flockFly{0%{transform:translate(-30px,30px) scale(.9);opacity:0}8%{opacity:1}25%{transform:translate(28vw,-8px) scale(1)}50%{transform:translate(56vw,22px) scale(.95)}75%{transform:translate(82vw,-5px) scale(1)}100%{transform:translate(115vw,12px) scale(.9);opacity:0}}
+@keyframes dogRun{0%{transform:translateX(0) scaleX(1)}48%{transform:translateX(58vw) scaleX(1)}50%{transform:translateX(58vw) scaleX(-1)}100%{transform:translateX(112vw) scaleX(-1)}}
+@keyframes henWalk{0%,100%{transform:translateX(0)}50%{transform:translateX(35px)}}@keyframes feedBounce{50%{transform:translateY(-4px)}}@keyframes cloudMove{50%{transform:translateX(80px)}}@keyframes cloudMove2{50%{transform:translateX(-70px)}}@keyframes sunPulse{50%{transform:scale(1.12) rotate(8deg)}}
+@media(max-width:480px){.farmScene{height:125px}.pigeonFlight{font-size:22px}.dog{font-size:31px}.hen{font-size:27px}.feed{left:35%;font-size:12px}}
+@media(max-width:700px){.grid{grid-template-columns:1fr}.form{grid-template-columns:1fr 1fr}.birds{font-size:42px}}@media(max-width:480px){.form{grid-template-columns:1fr}.flight{width:75px;height:100px}.loftName{font-size:28px}.hero h1{font-size:30px}.quote{font-size:20px}}
+</style></head>
+<body>
+<header class="hero">
+  <div class="leaf">🌿</div>
+  <div class="heroText">
+    <div class="loftName">🕊️ MY LOFT</div>
+    <h1>PIGEON STOCK</h1>
+    <div class="tag">Simple • Private • Organized</div>
+  </div>
+  <div class="flight" aria-hidden="true">
+    <span class="fly f1">🕊️</span><span class="fly f2">🕊️</span><span class="fly f3">🕊️</span>
+    <span class="fly f4">🕊️</span>
+  </div>
+</header>
+<div class="farmScene" aria-hidden="true">
+  <div class="sun">☀️</div>
+  <div class="cloud cloud1">☁️</div>
+  <div class="cloud cloud2">☁️</div>
+  <div class="pigeonFlight">
+    <span>🕊️</span><span>🕊️</span><span>🕊️</span>
+  </div>
+  <div class="groundAnimals">
+    <span class="hen hen1">🐔</span>
+    <span class="hen hen2">🐔</span>
+    <span class="feed">• • • • • •</span>
+    <span class="dog">🐕</span>
+  </div>
+</div>
+<main class="wrap">
+<div class="nav"><button id="shopTab" class="active" onclick="shopView()">👀 Shopkeeper View</button><button id="adminTab" onclick="adminView()">🔐 Admin</button></div>
+
+<section id="shop"><div class="card"><h2>Available Stock</h2><p class="note">View-only. Private sales and records are not shown.</p><div style="overflow:auto"><table><thead><tr><th>Pigeon</th><th>Type / Colour</th><th>Available</th><th>Price</th></tr></thead><tbody id="shopRows"></tbody></table></div><div class="quoteSpace"><div class="quote">“Let your pigeons rise with grace,<br>and let every flight tell a beautiful story.”<small>— MY LOFT</small></div></div>
+<div class="callBar">
+  <a id="shopPhoneLink" href="tel:">📞 Call to Order</a>
+  <div class="health">🌿 Healthy Birds • Care • Feed • Love</div>
+  <div class="note">Updated <span id="last">—</span></div>
+</div></div></section>
+
+<section id="admin" class="hidden">
+<div class="card">
+<h2>📦 Current Available Stock</h2>
+<p class="note">Live stock — exactly the same information shown to the shopkeeper.</p>
+<div style="overflow:auto"><table><thead><tr><th>Pigeon</th><th>Type / Colour</th><th>Available</th><th>Price</th></tr></thead><tbody id="adminStockRows"></tbody></table></div>
+</div>
+<div class="card"><h2>🔐 Admin Dashboard</h2><div class="grid"><div class="stat a"><small>CURRENT PIGEONS</small><strong id="aq">0</strong></div><div class="stat b"><small>VARIETIES</small><strong id="av">0</strong></div><div class="stat c"><small>STOCK VALUE</small><strong id="value">₹0</strong></div></div></div>
+<div class="card"><h2>📦 Stock Management</h2><div class="form"><label>Pigeon / Variety<input id="name"></label><label>Type / Colour<input id="colour"></label><label>Quantity<input id="qty" type="number" min="1"></label><label>Price / Pigeon<input id="price" type="number" min="0"></label><button onclick="saveStock()">ADD / UPDATE STOCK</button></div></div>
+<div class="card"><h2>💰 Record Sold Pigeon</h2><div class="form"><label>Pigeon / Variety<input id="soldName"></label><label>Quantity Sold<input id="soldQty" type="number" min="1"></label><label>Sale Price / Pigeon<input id="soldPrice" type="number" min="0"></label><label>Private Note<input id="soldNote"></label><button onclick="recordSale()">RECORD SALE — PRIVATE</button></div></div>
+<div class="card"><h2>📊 Private Sales Report</h2><button class="download" onclick="csvSales()">Download Sales CSV</button><div style="overflow:auto;margin-top:12px"><table><thead><tr><th>Date/Time</th><th>Pigeon</th><th>Qty</th><th>Price</th><th>Total</th><th>Note</th></tr></thead><tbody id="salesRows"></tbody></table></div></div>
+<div class="card"><h2>📚 Permanent Stock History</h2><p class="note">Every change is appended to history. Editing live stock never deletes the previous record.</p><button class="download" onclick="csvHistory()">Download History CSV</button><div style="overflow:auto;margin-top:12px"><table><thead><tr><th>Date/Time</th><th>Action</th><th>Pigeon</th><th>Before</th><th>Change</th><th>After</th><th>Price</th></tr></thead><tbody id="historyRows"></tbody></table></div></div>
+<div class="card"><h2>⚙️ Shop Settings</h2><div class="form"><label>Shop / Loft Name<input id="shopName" value="MY LOFT"></label><label>Phone Number<input id="phone" placeholder="+91 XXXXX XXXXX"></label><div></div><div></div><button onclick="saveSettings()">SAVE SETTINGS</button></div></div>
+</section></main>
+<script>
+/* Browser-persistent version: data survives refreshes on this device/browser. */
+const saved=JSON.parse(localStorage.getItem("myLoftPigeonData")||"null");
+let stock=saved?.stock||[],sales=saved?.sales||[],history=saved?.history||[],cfg=saved?.cfg||{name:"MY LOFT",phone:"—"};
+const money=n=>"₹"+new Intl.NumberFormat("en-IN").format(n||0);
+function persist(){localStorage.setItem("myLoftPigeonData",JSON.stringify({stock,sales,history,cfg}));}
+function adminView(){if(prompt("Admin password")!=="31052005")return alert("Wrong password");admin.classList.remove("hidden");shop.classList.add("hidden");adminTab.classList.add("active");shopTab.classList.remove("active");render()}
+function shopView(){shop.classList.remove("hidden");admin.classList.add("hidden");shopTab.classList.add("active");adminTab.classList.remove("active");render()}
+function saveStock(){
+ const n=document.getElementById('name').value.trim();
+ const c=document.getElementById('colour').value.trim();
+ const q=Number(document.getElementById('qty').value);
+ const p=Number(document.getElementById('price').value);
+ if(!n || !Number.isFinite(q) || q<1 || !Number.isFinite(p) || p<0){
+   alert("Please enter pigeon name, quantity and price.");
+   return;
+ }
+ let existing=stock.find(x=>x.name.toLowerCase()===n.toLowerCase());
+ const before=existing?existing.qty:0;
+ if(existing){existing.qty=q;existing.colour=c||"—";existing.price=p;}
+ else {stock.push({name:n,colour:c||"—",qty:q,price:p});}
+ history.push([new Date().toLocaleString(),existing?"EDIT":"ADD",n,before,q-before,q,p]);
+ document.getElementById('name').value="";
+ document.getElementById('colour').value="";
+ document.getElementById('qty').value="";
+ document.getElementById('price').value="";
+ persist();
+ render();
+ alert(existing ? "Stock updated successfully." : "Stock added successfully.");
+}
+function recordSale(){
+ const n=document.getElementById('soldName').value.trim();
+ const q=Number(document.getElementById('soldQty').value);
+ const p=Number(document.getElementById('soldPrice').value);
+ const s=stock.find(x=>x.name.toLowerCase()===n.toLowerCase());
+ if(!s||!Number.isFinite(q)||q<1||q>s.qty||!Number.isFinite(p)||p<0){alert("Check pigeon, quantity and sale price.");return;}
+ const before=s.qty;s.qty-=q;
+ sales.push([new Date().toLocaleString(),s.name,q,p,q*p,document.getElementById('soldNote').value]);
+ history.push([new Date().toLocaleString(),"SALE",s.name,before,-q,s.qty,p]);
+ document.getElementById('soldQty').value="";
+ document.getElementById('soldPrice').value="";
+ document.getElementById('soldNote').value="";
+ persist();
+ render();
+ alert("Sale recorded successfully.");
+}
+function saveSettings(){cfg.name=shopName.value||"MY LOFT";cfg.phone=phone.value||"—";persist();render();alert("Settings updated successfully.")}
+function render(){const stockTable=stock.map(s=>`<tr><td>🕊️ <b>${esc(s.name)}</b></td><td>${esc(s.colour)}</td><td><span class="pill">${s.qty}</span></td><td class="money">${money(s.price)}</td></tr>`).join("")||"<tr><td colspan=4>No stock available.</td></tr>";
+shopRows.innerHTML=stockTable;
+document.getElementById("adminStockRows").innerHTML=stockTable;const phoneLink=document.getElementById("shopPhoneLink");
+phoneLink.textContent="📞 Call "+cfg.phone;
+phoneLink.href=cfg.phone && cfg.phone!=="—" ? "tel:"+cfg.phone.replace(/[^0-9+]/g,"") : "tel:";
+last.textContent=new Date().toLocaleString();aq.textContent=stock.reduce((a,s)=>a+s.qty,0);av.textContent=stock.length;value.textContent=money(stock.reduce((a,s)=>a+s.qty*s.price,0));salesRows.innerHTML=sales.map(x=>`<tr><td>${x[0]}</td><td>${esc(x[1])}</td><td>${x[2]}</td><td>${money(x[3])}</td><td class=money>${money(x[4])}</td><td>${esc(x[5]||"")}</td></tr>`).join("")||"<tr><td colspan=6>No sales recorded.</td></tr>";historyRows.innerHTML=history.map(x=>`<tr>${x.map(v=>`<td>${esc(v)}</td>`).join("")}</tr>`).join("")||"<tr><td colspan=7>No history yet.</td></tr>"}
+function esc(v){return String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]))}
+function download(name,text){let a=document.createElement("a");a.href=URL.createObjectURL(new Blob([text],{type:"text/csv"}));a.download=name;a.click()}
+function csv(rows){return rows.map(r=>r.map(v=>`"${String(v??"").replaceAll('"','""')}"`).join(",")).join("\n")}
+function csvSales(){download("sales-report.csv",csv([["Date/Time","Pigeon","Qty Sold","Sale Price","Total","Note"],...sales]))}
+function csvHistory(){download("stock-history.csv",csv([["Date/Time","Action","Pigeon","Qty Before","Qty Change","Qty After","Price"],...history]))}
+render();
+</script></body></html>
